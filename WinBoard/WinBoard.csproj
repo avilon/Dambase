@@ -44,6 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoardView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoardView.Designer.cs">
+      <DependentUpon>BoardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBEnterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBEnterView.Designer.cs">
+      <DependentUpon>DBEnterView.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +64,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BoardView.resx">
+      <DependentUpon>BoardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBEnterView.resx">
+      <DependentUpon>DBEnterView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
